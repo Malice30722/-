@@ -61,7 +61,7 @@ function sendGroupForm(page) {
         <a href="{% url 'share' item.id %}">
             <button class="py-0">share</button></a>
         <a href="{% url 'good' item.id %}">
-            <button class="py-0">good!</button></a>
+            <button class="py-0">&#x1f44d;</button></a>
         {% if item.owner == login_user %}
         <a href="{% url 'edit' item.id %}">
             <button class="py-0">編集</button></a>
