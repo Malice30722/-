@@ -9,7 +9,7 @@
     crossorigin="anonymous">
 </head>
 <body class="container">
-    <h1 class="display-4 text-primary">
+    <h1 class="display-4 text-success">
         編集</h1>
     <p>※以下の文章を編集します。</p>
     <form action="{% url 'edit' id %}" 
@@ -20,7 +20,7 @@
         {{ form.as_table }}
             <tr><th><td>
                 <input type="submit" value="編集"
-                    class="btn btn-primary mt-2">
+                    class="btn btn-info mt-2">
             </td></th></tr>
         </table>
     </form>
