@@ -17,6 +17,7 @@
         <form action="{% url 'delete' id %}" method="post">
         {% csrf_token %}
         <tr><th></th><td>
+            <a href="{{request.META.HTTP_REFERER}}" class="btn btn-secondary">キャンセル</a>
             <input type="submit" value="削除"
                 class="btn btn-danger">
         </td></tr>
