@@ -19,6 +19,7 @@
         <tr><th>Message</th><td>{{message.content}}</td></tr>
         {{ form.as_table }}
             <tr><th><td>
+                <a href="{{request.META.HTTP_REFERER}}" class="btn btn-secondary">キャンセル</a>
                 <input type="submit" value="編集"
                     class="btn btn-warning mt-2">
             </td></th></tr>
