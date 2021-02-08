@@ -9,7 +9,7 @@
     crossorigin="anonymous">
 </head>
 <body class="container">
-    <h1 class="display-4 text-primary">
+    <h1 class="display-4 text-danger">
         削除</h1>
     <p>※以下の文章を削除します。</p>
     <table class="table">
@@ -18,7 +18,7 @@
         {% csrf_token %}
         <tr><th></th><td>
             <input type="submit" value="削除"
-                class="btn btn-primary">
+                class="btn btn-danger">
         </td></tr>
         </form>
     </table>
